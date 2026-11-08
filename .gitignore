@@ -1,0 +1,49 @@
+# ============ 一、战利品与敏感信息：绝不入库 ============
+**/04_loot/*
+!**/04_loot/.gitkeep
+*flag*.txt
+proof.txt
+root.txt
+user.txt
+*.kdbx
+*.pem
+*.key
+
+# ============ 二、大文件：虚拟机、镜像、固件 ============
+04_lab/images/*
+04_lab/firmware/*
+!04_lab/images/.gitkeep
+!04_lab/firmware/.gitkeep
+*.ova
+*.ovf
+*.vmdk
+*.vmsd
+*.vmem
+*.vmss
+*.vmxf
+*.iso
+*.img
+*.qcow2
+*.vdi
+*.bin
+*.trx
+*.chk
+*.zip
+
+# ============ 三、工具与临时产物 ============
+*.log
+*.tmp
+*.bak
+*.swp
+*.pid
+__pycache__/
+*.pyc
+node_modules/
+
+# ============ 四、系统与编辑器 ============
+.DS_Store
+Thumbs.db
+desktop.ini
+.obsidian/
+.vscode/
+.idea/

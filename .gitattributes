@@ -1,0 +1,16 @@
+* text=auto eol=lf
+
+*.md   text eol=lf
+*.ps1  text eol=crlf
+*.txt  text eol=lf
+*.py   text eol=lf
+
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.pdf  binary
+*.pcap binary
+*.cap  binary
+*.zip  binary
+*.7z   binary
