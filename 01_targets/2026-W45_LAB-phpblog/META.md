@@ -46,7 +46,7 @@ cwe: []
 |---|---|
 | 攻击机 | Kali 2026.x，VMware NAT |
 | 靶机 | 本地 OVA，NAT 同一网段 |
-| 快照 | 开工前已打 `clean`，收工已回滚 |
+| 备份 | 开工前已执行 `backup-vm.ps1 -Name phpblog`，收工已恢复（Player 无快照） |
 | 开始时间 | |
 
 ## 结果
