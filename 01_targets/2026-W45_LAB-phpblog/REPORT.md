@@ -4,8 +4,8 @@
 |---|---|
 | 姓名 | 黄子沣 |
 | 周期 | 11.02–11.08（2026-W45，周一至周日） |
-| 本周靶机 | THM / Basic Pentesting（Easy） |
-| 过程台账 | `01_targets/2026-W45_THM-BasicPentesting/` |
+| 本周靶机 | LAB / phpblog（Baby） |
+| 过程台账 | `01_targets/2026-W45_LAB-phpblog/` |
 
 ## 【总体摘要】
 
@@ -33,8 +33,8 @@
 
 | 项 | 内容 |
 |---|---|
-| 平台 / 名称 | THM / Basic Pentesting |
-| 难度 | Easy |
+| 平台 / 名称 | LAB / phpblog |
+| 难度 | Baby |
 | 目标系统 | Linux / Windows |
 | 开放端口 | |
 | 实际耗时 | |

@@ -31,7 +31,8 @@ target-practice/
 │       ├── REPORT.md
 │       └── WP.md
 ├── 01_targets/                    # 一台靶机一个文件夹（核心工作区）
-│   └── 2026-W45_THM-BasicPentesting/
+│   └── 2026-W45_LAB-phpblog/
+│       ├── 00_开工指引.md          # 本台的启动&完成指南（逐台实例化）
 │       ├── META.md                # 元数据 + 一句话结论
 │       ├── NOTES.md               # 作战笔记（边打边记，原始）
 │       ├── REPORT.md              # 周报正文（唯一源）
