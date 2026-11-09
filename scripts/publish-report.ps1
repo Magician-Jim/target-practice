@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
     把某台靶机的 REPORT.md 导出到 02_reports，并按实验室命名规则改名。
 
@@ -25,11 +25,13 @@ if (-not (Test-Path $reportPath)) { throw "找不到周报源文件：$reportPat
 $text = Get-Content -Path $reportPath -Raw -Encoding UTF8
 
 $range = $null
-if ($text -match '打靶机周报（([0-9]{2}\.[0-9]{2}–[0-9]{2}\.[0-9]{2})）') { $range = $Matches[1] }
-if (-not $range) {
-    if ($text -match '([0-9]{2}\.[0-9]{2}–[0-9]{2}\.[0-9]{2})') { $range = $Matches[1] }
+# ① 新格式：报告周期：2026.11.02--2026.11.09
+if ($text -match '报告周期[:：]\s*\d{4}\.(\d{2})\.(\d{2})\s*-{1,2}\s*\d{4}\.(\d{2})\.(\d{2})') {
+    $range = '{0}.{1}–{2}.{3}' -f $Matches[1], $Matches[2], $Matches[3], $Matches[4]
 }
-if (-not $range) { throw '无法从 REPORT.md 中解析出周期（形如 11.02–11.08），请检查标题行' }
+# ② 旧格式：打靶机周报（11.02–11.09）
+if (-not $range -and $text -match '([0-9]{2}\.[0-9]{2}–[0-9]{2}\.[0-9]{2})') { $range = $Matches[1] }
+if (-not $range) { throw '无法从 REPORT.md 中解析出周期（形如 2026.11.02--2026.11.09 或 11.02–11.09），请检查报告抬头' }
 
 $outName = '打靶机周报-{0}_{1}.md' -f $range, $Author
 $outDir = Join-Path $root '02_reports'
