@@ -40,6 +40,14 @@ __pycache__/
 *.pyc
 node_modules/
 
+# 一次性利用与源码审计中间产物
+01_targets/**/02_exploit/phpblog_shell.php
+01_targets/**/02_exploit/source-audit/var/
+scripts/session_serializer_probe.php
+**/05_evidence/desktop_state.png
+**/05_evidence/screen_live.png
+**/05_evidence/vmware_window*.png
+
 # ============ 四、系统与编辑器 ============
 .DS_Store
 Thumbs.db
