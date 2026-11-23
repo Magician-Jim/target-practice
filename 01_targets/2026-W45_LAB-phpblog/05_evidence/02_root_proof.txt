@@ -1,0 +1,18 @@
+=== provenance ===
+Wed Nov 18 05:06:18 AM UTC 2026
+
+=== identity ===
+uid=0(root) gid=0(root) groups=0(root)
+phpblog
+Linux phpblog 6.12.73+deb13-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.73-1 (2026-02-17) x86_64 GNU/Linux
+
+=== flag ===
+flag{root-7e934684eafe9fe6f1c32d6b06207c7f}
+
+=== flag metadata ===
+600 root:root 44 /root/7e934684eafe9fe6f1c32d6b06207c7f.txt
+
+=== blogbackup service ===
+active
+MainPID=555
+ExecStart={ path=/opt/blogbackup/start.sh ; argv[]=/opt/blogbackup/start.sh ; ignore_errors=no ; start_time=[Tue 2026-11-17 23:58:20 EST] ; stop_time=[n/a] ; pid=555 ; code=(null) ; status=0/0 }

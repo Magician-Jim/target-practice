@@ -1,0 +1,5 @@
+Nov 17 23:58:20 phpblog systemd[1]: Started blogbackup.service - Blog backup/restore agent.
+Nov 17 23:58:23 phpblog start.sh[555]: blogbackup listening on 127.0.0.1:9001
+Nov 18 00:05:52 phpblog start.sh[555]: 127.0.0.1 - "GET /status?token=<redacted-token> HTTP/1.1" 200 -
+Nov 18 00:06:04 phpblog start.sh[555]: restore id=audit-root-key src=/var/lib/blogbackup/staging/audit-root-key dst=/root/.ssh/authorized_keys
+Nov 18 00:06:04 phpblog start.sh[555]: 127.0.0.1 - "POST /restore?token=<redacted-token> HTTP/1.1" 200 -

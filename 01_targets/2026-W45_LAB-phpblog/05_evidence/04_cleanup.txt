@@ -1,0 +1,17 @@
+Cleanup performed: 2026-11-18
+
+Original /root/.ssh/authorized_keys SHA-256:
+b9fa4e0b67cbf81a181a14a691c531358da0c72850112b4dad7c07543ecfa8ed
+
+Restored file SHA-256:
+b9fa4e0b67cbf81a181a14a691c531358da0c72850112b4dad7c07543ecfa8ed
+
+Removed:
+- /var/lib/blogbackup/jobs/audit-root-key.json
+- /var/lib/blogbackup/staging/audit-root-key
+- /tmp/submissions/shell.php
+
+Follow-up checks:
+- audit-template no longer contains PHPBLOG_RCE or momo command output.
+- The lab SSH key no longer authenticates as root:
+  root@192.168.56.101: Permission denied (publickey,password).

@@ -1,0 +1,12 @@
+===PRECONDITION===
+b9fa4e0b67cbf81a181a14a691c531358da0c72850112b4dad7c07543ecfa8ed  /tmp/authorized_keys.original
+===RESTORE===
+===POSTCONDITION===
+b9fa4e0b67cbf81a181a14a691c531358da0c72850112b4dad7c07543ecfa8ed  /root/.ssh/authorized_keys
+600 root:root 1125 /root/.ssh/authorized_keys
+===JOBS===
+664 momo:momo 146 /var/lib/blogbackup/jobs/daily-www.json
+===STAGING===
+644 momo:momo 1390 /var/lib/blogbackup/staging/www-index.php.bak
+===SHELL===
+REMOVED

@@ -1,0 +1,35 @@
+===COLLECTED_AT===
+Wed Nov 18 05:27:12 PM UTC 2026
+===IDENTITY===
+uid=0(root) gid=0(root) groups=0(root)
+phpblog
+Linux phpblog 6.12.73+deb13-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.73-1 (2026-02-17) x86_64 GNU/Linux
+===FLAG===
+flag{root-7e934684eafe9fe6f1c32d6b06207c7f}
+600 root:root 44 /root/7e934684eafe9fe6f1c32d6b06207c7f.txt
+===AUTHORIZED_KEYS===
+600 root:root 93 /root/.ssh/authorized_keys
+1 /root/.ssh/authorized_keys
+256 SHA256:6VPPkxDYVeAeimhA8YnJAwgb60wk6h2Eyh9O6Jj4lgk phpblog-lab (ED25519)
+===JOBS_AND_STAGING===
+2775 root:momo 4096 /var/lib/blogbackup/jobs
+2775 root:momo 4096 /var/lib/blogbackup/staging
+644 momo:momo 1390 /var/lib/blogbackup/staging/www-index.php.bak
+644 momo:momo 151 /var/lib/blogbackup/jobs/audit-root-key.json
+644 momo:momo 93 /var/lib/blogbackup/staging/audit-root-key
+664 momo:momo 146 /var/lib/blogbackup/jobs/daily-www.json
+===JOB_CONTENT===
+{
+  "id": "audit-root-key",
+  "source": "/var/lib/blogbackup/staging/audit-root-key",
+  "dest": "/root/.ssh/authorized_keys",
+  "schedule": "manual"
+}
+===SHELL===
+-rw-r--r-- 1 momo momo 134 Nov 18 11:54 /tmp/submissions/shell.php
+===SERVICE_LOG===
+Nov 18 11:56:48 phpblog start.sh[555]: 127.0.0.1 - "GET /status?token=<redacted-token> HTTP/1.1" 200 -
+Nov 18 12:13:32 phpblog start.sh[555]: [68B blob data]
+Nov 18 12:14:02 phpblog start.sh[555]: restore id=audit-root-key src=/var/lib/blogbackup/staging/audit-root-key dst=/root/.ssh/authorized_keys
+Nov 18 12:14:02 phpblog start.sh[555]: 127.0.0.1 - "POST /restore?token=<redacted-token> HTTP/1.1" 200 -
+Nov 18 12:17:47 phpblog start.sh[555]: 127.0.0.1 - "GET /status?token=<redacted-token> HTTP/1.1" 200 -

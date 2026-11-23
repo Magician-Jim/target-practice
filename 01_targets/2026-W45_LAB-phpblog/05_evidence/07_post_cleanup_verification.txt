@@ -1,0 +1,28 @@
+Post-cleanup verification: 2026-11-22
+
+Target service availability:
+- http://192.168.56.101/ returned HTTP 200.
+- TCP port 22 remained reachable.
+
+Root authentication:
+- The lab private key no longer authenticates as root.
+- Result: root@192.168.56.101: Permission denied (publickey,password).
+
+Low-privilege execution:
+- The audit-template page still loads normally.
+- Response no longer contains PHPBLOG_RCE or uid=1000(momo).
+- Status: RCE_STATUS=CLEANED.
+
+Persistent artifacts:
+- /var/lib/blogbackup/jobs/audit-root-key.json removed.
+- /var/lib/blogbackup/staging/audit-root-key removed.
+- /tmp/submissions/shell.php removed.
+
+Original root key state:
+- Restored /root/.ssh/authorized_keys from the audited original file.
+- SHA-256 before restore:
+  b9fa4e0b67cbf81a181a14a691c531358da0c72850112b4dad7c07543ecfa8ed
+- SHA-256 after restore:
+  b9fa4e0b67cbf81a181a14a691c531358da0c72850112b4dad7c07543ecfa8ed
+- Owner/mode: root:root, 0600.
+- Size: 1125 bytes.

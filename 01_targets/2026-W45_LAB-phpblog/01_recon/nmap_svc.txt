@@ -1,0 +1,15 @@
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-11-18 00:08 -0500
+Nmap scan report for 192.168.56.101
+Host is up (0.0060s latency).
+
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 10.0p2 Debian 7+deb13u4 (protocol 2.0)
+80/tcp open  http    Apache httpd 2.4.68 ((Debian))
+|_http-generator: Typecho 1.3.0
+|_http-title: \xE6\x8A\x98\xE9\xA1\xB5\xE6\x89\x8B\xE8\xAE\xB0 | \xE4\xBB\xA3\xE7\xA0\x81\xE3\x80\x81\xE7\x94\x9F\xE6\xB4\xBB\xE5\x92\x8C\xE4\xB8\x80\xE7\x82\xB9\xE6\x8A\x98\xE8\x85\xBE\xE3\x80\x82
+|_http-server-header: Apache/2.4.68 (Debian)
+MAC Address: 08:00:27:07:F5:8B (Oracle VirtualBox virtual NIC)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 14.48 seconds

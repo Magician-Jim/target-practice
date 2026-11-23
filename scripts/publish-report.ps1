@@ -53,7 +53,8 @@ Write-Host ''
 Write-Host "已导出：$outPath" -ForegroundColor Green
 Write-Host ''
 Write-Host '下一步：' -ForegroundColor Cyan
-Write-Host '  1. 通读一遍，确认【总体摘要】能独立读懂'
-Write-Host '  2. 需要 PDF 时：Word 打开另存为 PDF，或 pandoc 转换'
-Write-Host '  3. 周一上午发给导师'
+Write-Host '  1. 核对四段顺序：遗留问题、整体进展、下周计划、待确认问题'
+Write-Host '  2. 检查导出文件中的仓库内链接可打开'
+Write-Host '  3. 需要 PDF 时：Word 打开另存为 PDF，或 pandoc 转换'
+Write-Host '  4. 周一上午发给导师'
 Write-Host ''
